@@ -30,9 +30,8 @@ class RegistrationForm(forms.ModelForm):
 
     def clean(self):
         data = self.cleaned_data
-        # print(data)
         password = data.get('password')
-        # TODO: спросить про pop, почему удаляем password_confirm ? и почему была ошибка до этого?
+         
         password_confirm = data.pop('password_confirmation')
         if password != password_confirm:
             raise forms.ValidationError("Passwords do not match.")

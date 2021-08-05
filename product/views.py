@@ -74,7 +74,7 @@ def cart_detail(request):
 # def create_product(request):
 #     if request.method == 'POST':
 #         print(request.POST)
-#         product_form = CreateProductForm(request.POST, request.FILES)  # TODO: спросить про FILES
+#         product_form = CreateProductForm(request.POST, request.FILES)
 #         if product_form.is_valid():
 #             product = product_form.save()
 #             return redirect(product.get_absolute_url())

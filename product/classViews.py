@@ -23,7 +23,6 @@ class SearchListView(ListView):
                                    Q(description__icontains=q))
         return queryset
 
-
 class CategoryListView(ListView):
     model = Category
     template_name = 'products/home.html'
